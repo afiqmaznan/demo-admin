@@ -19,10 +19,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => ''], function () {
 
-    Auth::routes();
+    Auth::routes(['register' => false]);
+
     Route::group(['middleware' => 'auth'], function () {
 
-        Route::get('/', 'PageController@adminHome')->name('home');
+        Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
     });
     
