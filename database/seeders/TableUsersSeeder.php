@@ -17,8 +17,8 @@ class TableUsersSeeder extends Seeder
         $user = [
             [
                'name'=>'Admin',
-               'email'=>'admin@afiqm.my',
-               'password'=> bcrypt('rahsia'),
+               'email'=>'admin@afiqmaznan.com',
+               'password'=> bcrypt('thisissecret'),
             ],
         ];
   
